@@ -47,6 +47,30 @@
     -git log #查看版本管理的日志
     -git reset --hard 版本号
 
+    -get rest . 把暂存区的东西放回工作区
+
 #红色表示未被管理
 #绿色表示提交到暂存区了
 
+#忽略文件
+    -空文件夹不被管理
+    -指定某些文件或文件夹不被git管理
+    -在项目根路径，跟.git文件夹一个路径，新建.gitignore在里面配置
+        windows中新建一个.gitignore.
+    -语法：
+        #号是注释，没有用
+        文件夹名字，表示文件夹忽略，不被管理
+        例如 .gitignore. 里面输入 note.md 那就表示忽略note文件
+            .gitignore. 里面输入 c 那就表示忽略c文件夹
+        /dist 表示根路径下的dist文件夹，不被管理
+        *.py  表示有后缀名号的文件都被忽略
+        *.log* 表示忽略log文件
+
+# 分支操作
+    -查看分支   git branch  查看所有分支，如果是绿色表示在当前分支上
+
+    -创建分支   git branch dev
+    -创建并切换到某个分支 git checkout -b dev
+    -删除分支   git branch -d dev
+    -切换分支   git checkout dev
+    -合并分支
