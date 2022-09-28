@@ -31,12 +31,19 @@
     -git add a.txt #把a提交到暂存区
     -git add . 把当前路径下所有的都提交到暂存区
 
+    -git commit -m '注释，我新增了a' #把暂存区的所有都提交到版本库
+    -需要增加作者信息
+        git config --global user.email 'you@example.com'
+        git config --global user.name 'Your name'
+
+        然后在C:\Users\<你的用户名>\.gitconfig 可以查看信息
 
     -把 1.txt的新增提交到版本管理后
     -新建2.txt,在1.txt中新增一行
     -git checkout . #恢复到提交版本的位置，
     1.txt是空的，2.txt没有被管理所以不会有变化
-    
+
+    -git log #查看版本管理的日志
 
 #红色表示未被管理
 #绿色表示提交到暂存区了
