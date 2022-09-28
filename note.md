@@ -73,4 +73,6 @@
     -创建并切换到某个分支 git checkout -b dev
     -删除分支   git branch -d dev
     -切换分支   git checkout dev
-    -合并分支
+    -合并分支   git merge 分支名
+     把dev合并到master上 首先切换到master上然后 git merge dev 执行合并dev分支的命令
+
